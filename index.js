@@ -33,7 +33,7 @@ app.post('/upload', upload.single('thumbnail'), (req, res) => {
 
   const levelData = {
     Difficulty: difficulty,
-    Thumbnail: `api/image?src=uploads/${file.filename}`,
+    Thumbnail: `api/image?src=/${file.filename}`,
     Answer: answer,
   };
 
